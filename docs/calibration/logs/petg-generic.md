@@ -131,8 +131,9 @@ everywhere → the PETG is wet** (separate issue, not speed).
 
 **Applied:** Max volumetric speed = **`17.5` mm³/s** → saved to profile.
 
-> ⚠️ **Action item — dry the PETG** (~65 °C, 6–8 h). Moisture affects surface quality and
-> stringing; re-check Step 4 (retraction) after drying.
+> ⚠️ **Action item — dry the PETG** (~65 °C, 6–8 h; see
+> [Drying Filament](../../reference/filament-drying.md)). Moisture affects surface quality
+> and stringing; re-check Step 4 (retraction) after drying, then do Steps 6–7.
 
 **Photo:**
 ![Step 5 max volumetric speed result](images/petg-05-maxflow.jpg) <!-- add your photo -->

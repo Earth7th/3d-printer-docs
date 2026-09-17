@@ -12,6 +12,11 @@ using **OrcaSlicer** — the author's reference machine is a **Creality K2**.
 
 Machine-level (hardware) calibration is planned as a separate guide.
 
+## Reference
+
+- **[Drying Filament (Wet Filament Fix)](docs/reference/filament-drying.md)** — how to
+  spot wet filament, drying temps/times per material, and storage.
+
 ## How it's organised
 
 - `docs/calibration/` — the guides and their `images/`

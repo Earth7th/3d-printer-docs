@@ -12,6 +12,12 @@ _Avoid_: printer setup, hardware tuning
 Per-spool tuning of print parameters (temperature, flow rate, pressure advance, retraction, max volumetric speed) that must be repeated for each new filament type. This is the current focus.
 _Avoid_: material profiling, per-material calibration
 
+**Wet filament**:
+Filament that has absorbed moisture from the air (most filaments are hygroscopic). The
+water flashes to steam in the nozzle, causing pockmarks, popping, stringing, and weak
+layers. Fixed by drying, not calibration.
+_Avoid_: damp filament, humid filament
+
 **Auto-calibration**:
 The printer's built-in routine that self-tunes some parameters (on the K2: AI-camera-assisted flow and pressure advance, plus auto bed leveling and input shaping). Distinct from manual [[filament-calibration]], which refines or replaces its results.
 _Avoid_: self-calibration, one-click calibration

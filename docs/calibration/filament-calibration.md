@@ -37,7 +37,7 @@ Do these every time, or the tests below will lie to you:
 
 1. **Clean the nozzle** — no burnt residue on the tip.
 2. **Clean the bed** — wash with dish soap or wipe with IPA. No fingerprints.
-3. **Dry the filament** — PETG especially absorbs moisture; wet filament strings and pops no matter how well you calibrate.
+3. **Dry the filament** — PETG especially absorbs moisture; wet filament strings, pops, and leaves pockmarks no matter how well you calibrate. See **[Drying Filament](../reference/filament-drying.md)** for temps, times, and how to spot wet filament.
 4. **Let auto-cal finish** — if your printer has a built-in calibration (like the K2), run it first. This guide *refines* its result.
 5. **Pick ONE filament** to calibrate at a time. If you use a multi-material unit (e.g. the K2's CFS), load it in a known slot and note which one.
 6. **Use a standard print speed and keep it constant** across all 7 steps. Calibrate at the speed you actually print — don't use max speed, or you'll be testing speed instead of the parameter. Changing speed later can shift earlier results.

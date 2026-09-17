@@ -97,13 +97,17 @@ Pick the **lowest temperature that still bonds strongly and looks clean**.
 ## Step 2 — Flow rate
 
 **What it fixes:** How *much* plastic comes out. Too much = bulging tops and elephant
-skin; too little = gaps between lines. Do this in **two passes**.
+skin; too little = gaps between lines.
 
-**How to run it (Orca):**
-- **Pass 1 (coarse):** `Calibration → Flow rate → Pass 1`. Prints patches at different
-  flow modifiers. Pick the smoothest, flattest patch and apply its value.
-- **Pass 2 (fine):** `Calibration → Flow rate → Pass 2` (uses your Pass 1 result).
-  Narrow it down to the best patch.
+**How to run it (Orca — YOLO, recommended):** `Calibration → Flow rate → YOLO (Recommended)`.
+It prints **11 blocks**, each nudging your current flow ratio by an additive modifier
+(default range **−0.05 … +0.05**, step **0.01**; "perfectionist" is −0.04 … +0.035, step
+0.005). Pick the best block, then **`new flow = old flow + that block's modifier`**
+(e.g. 0.98 + 0.01 = 0.99). One print, done.
+
+> **Legacy alternative (Pass 1 / Pass 2):** older two-print method using a *multiplicative*
+> formula `old × (100 + modifier) / 100`. YOLO replaces it — only use it if your Orca
+> version lacks YOLO.
 
 **How to read it:**
 - ❌ *Too low:* visible gaps/lines between infill top strands, translucent thin top.

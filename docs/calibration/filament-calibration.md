@@ -1,22 +1,28 @@
-# Creality K2 — Filament Calibration Guide
+# Filament Calibration Guide (Any 3D Printer)
 
-A step-by-step guide to hand-tuning a filament on the **Creality K2** (with the CFS
-multi-material unit) using **OrcaSlicer**. Auto-calibration on the K2 already does a
-first pass; this guide is the manual refinement that actually makes prints clean.
+A step-by-step guide to hand-tuning a filament on **any FDM 3D printer** using
+**OrcaSlicer**. The process is the same on every machine — only the menu names and
+starting numbers change. If your printer already ran an auto-calibration, this guide is
+the manual refinement that actually makes prints clean.
+
+> **Author's machine:** these steps were written and tested on a **Creality K2** (with
+> the CFS multi-material unit). Where the K2 does something specific — like AI
+> auto-calibration — it's called out as an example, not a requirement.
 
 > **New to this?** You don't need to understand everything. Do the steps **in order**,
-> save each value, and your prints will improve. The method here also works on most
-> other 3D printers — only the menu names and starting numbers change.
+> save each value, and your prints will improve.
 
 ---
 
 ## Why calibrate by hand if auto-calibration ran?
 
-The K2's AI camera auto-tunes **flow** and **pressure advance** and runs auto bed
-leveling + input shaping. That gets you 80% of the way. But the auto pass is often a
-little off for a specific spool, and it can't tune temperature, retraction, top-surface
-finish, or bridging. Manual calibration closes that gap — and you only redo it **per
-filament type**, not every print.
+Many modern printers auto-tune some parameters — the author's K2, for example, uses an AI
+camera to set **flow** and **pressure advance** and runs auto bed leveling + input
+shaping. That gets you 80% of the way. But the auto pass is often a little off for a
+specific spool, and it can't tune temperature, retraction, top-surface finish, or
+bridging. Manual calibration closes that gap — and you only redo it **per filament type**,
+not every print. If your printer has no auto-calibration at all, this guide is your full
+calibration.
 
 **When to (re)calibrate a filament:**
 - A new brand or type of filament (e.g. switching PLA → PETG, or Brand A PETG → Brand B PETG)
@@ -32,8 +38,8 @@ Do these every time, or the tests below will lie to you:
 1. **Clean the nozzle** — no burnt residue on the tip.
 2. **Clean the bed** — wash with dish soap or wipe with IPA. No fingerprints.
 3. **Dry the filament** — PETG especially absorbs moisture; wet filament strings and pops no matter how well you calibrate.
-4. **Let auto-cal finish** — run the K2's built-in calibration first. This guide *refines* its result.
-5. **Pick ONE filament** to calibrate at a time. Load it in a known CFS slot and note which slot.
+4. **Let auto-cal finish** — if your printer has a built-in calibration (like the K2), run it first. This guide *refines* its result.
+5. **Pick ONE filament** to calibrate at a time. If you use a multi-material unit (e.g. the K2's CFS), load it in a known slot and note which one.
 
 > **How to read the photos in each step:** every step shows three results —
 > ❌ **too low / under**, ✅ **correct**, ❌ **too high / over**. Match your own print to
@@ -117,12 +123,12 @@ skin; too little = gaps between lines. Do this in **two passes**.
 
 **What it fixes:** Corners and line consistency. Controls how the printer manages
 pressure when it starts/stops extruding, so corners aren't bulged and thin lines aren't
-patchy. The K2's auto-cal set a value already — **verify it here and refine if the test
-looks off.**
+patchy. If your printer auto-set a value (the K2 does), **verify it here and refine if
+the test looks off.**
 
-**How to run it (Orca):** `Calibration → Pressure advance`. Use the **Line** method (or
-Pattern method) for a direct-drive extruder like the K2. Orca prints lines/corners at
-increasing PA values labelled on the print.
+**How to run it (Orca):** `Calibration → Pressure advance`. Use the **Line** method for a
+direct-drive extruder (like the K2), or the **Pattern** method for a Bowden setup. Orca
+prints lines/corners at increasing PA values labelled on the print.
 
 **How to read it:**
 - ❌ *Too low:* bulging, blobby corners; thick line ends.
@@ -255,8 +261,9 @@ filament (PLA, ABS, etc.).
 
 This guide covers **filament** tuning. The one-time **machine-level** setup — mechanical
 checks, belt tension, first-layer / Z-offset — is deferred and will be documented
-separately. On the K2 most of this is handled by auto bed leveling and input shaping, but
-it's worth a manual verification pass. _TODO: add `docs/calibration/creality-k2-machine.md`._
+separately. On printers with auto bed leveling and input shaping (like the author's K2)
+most of this is automated, but it's worth a manual verification pass.
+_TODO: add `docs/calibration/machine-setup.md`._
 
 ---
 

@@ -1,11 +1,11 @@
 # 3D Print Calibration Docs
 
-Practical, readable 3D-printing calibration guides — written for the **Creality K2** but
-kept portable to other printers using **OrcaSlicer**.
+Practical, readable 3D-printing calibration guides. Written to work on **any FDM printer**
+using **OrcaSlicer** — the author's reference machine is a **Creality K2**.
 
 ## Guides
 
-- **[Creality K2 — Filament Calibration Guide](docs/calibration/creality-k2.md)** —
+- **[Filament Calibration Guide (Any 3D Printer)](docs/calibration/filament-calibration.md)** —
   step-by-step, in-order tuning of a filament (temperature → flow → pressure advance →
   retraction → max flow → bridging → ironing), with under/correct/over photo comparisons.
 

@@ -1,7 +1,7 @@
 # Calibration photos
 
 Drop your calibration result photos here using these exact filenames so the guide
-(`../creality-k2.md`) picks them up. `.jpg` or `.png` both work — just match the name.
+(`../filament-calibration.md`) picks them up. `.jpg` or `.png` both work — just match the name.
 
 | Step | Filenames |
 |------|-----------|

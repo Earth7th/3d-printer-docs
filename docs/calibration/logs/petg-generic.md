@@ -24,13 +24,27 @@ photo of each test. Use it as a filled-in example of what the process actually l
 | Spool label — nozzle / bed temp? | Unlabeled → assume **~230–250 °C nozzle, ~75–80 °C bed** |
 | Verify existing auto-cal values, or fresh? | **Fresh** — no clear auto values found |
 | Temp tower range? | **250 °C → 230 °C, 5 °C steps** (blocks at 250 / 245 / 240 / 235 / 230) |
+| Fan settings (constant, all steps) | Model fan **50%** (Min=Max), Side fan **0%**, Back fan/filtration **off** |
+| Layer height / speed | **0.20 mm**, Standard preset, kept constant |
 
-**Result:** _pending print._ Best block = **___ °C** _(fill in after printing)_
+**Observations per block**
+
+| Temp | Stringing | Overhangs / bridges | Layer shrinkage / bonding |
+|------|-----------|---------------------|---------------------------|
+| 250 °C | Worst (~3–4 strands), but minor remnants easily removed | Best overhangs; slight bridge droop | **Minimal** (best) |
+| 245 °C | Reduced | Less bridge droop | Shrinkage starts to appear |
+| ≤ 235 °C | Excessive (~5–6 strands) | — | Worse the lower you go |
+
+**Reasoning:** stringing is fixable later (retraction, Step 4 + drying); layer
+shrinkage/bonding is temperature-fundamental and isn't. So favor the higher end for
+strength.
+
+**Chosen nozzle temp:** **245 °C** — balance of low shrinkage + reduced stringing.
+Fallback **250 °C** if real parts show weak/cracking layers (or drop cooling to ~30%).
+→ Set this in the Orca PETG filament profile before the next test.
 
 **Photo:**
 ![Step 1 temperature tower result](images/petg-01-temp.jpg) <!-- add your photo -->
-
-**Chosen nozzle temp:** **___ °C** → saved to filament profile.
 
 ---
 

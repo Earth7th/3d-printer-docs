@@ -131,9 +131,12 @@ pressure when it starts/stops extruding, so corners aren't bulged and thin lines
 patchy. If your printer auto-set a value (the K2 does), **verify it here and refine if
 the test looks off.**
 
-**How to run it (Orca):** `Calibration → Pressure advance`. Use the **Line** method for a
-direct-drive extruder (like the K2), or the **Pattern** method for a Bowden setup. Orca
-prints lines/corners at increasing PA values labelled on the print.
+**How to run it (Orca):** `Calibration → Pressure advance`. Orca has three methods:
+**Pattern** (most accurate — recommended, and works well on Klipper firmware like the
+K2's), **Line** (quick single-layer), and **Tower**. Choose the **direct-drive** test
+variant for the K2 (Bowden setups use a much wider range). Recommended range for
+direct-drive: **start 0, end 0.08, step 0.002**. Orca labels each section with its PA
+value.
 
 **How to read it:**
 - ❌ *Too low:* bulging, blobby corners; thick line ends.

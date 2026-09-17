@@ -3,14 +3,10 @@
 Per-filament reference: recommended settings, temperatures, drying, storage, and
 material-specific quirks. One file per material type.
 
-## Planned / contents
+## Contents
 
-- PLA
-- PETG
-- ABS / ASA
-- TPU
-- Nylon (PA)
-- PC (Polycarbonate)
+- **[PETG](petg.md)** — incl. Generic PETG
+- _Planned:_ PLA, ABS / ASA, TPU, Nylon (PA), PC (Polycarbonate)
 
 > Drying applies to every material — see the cross-cutting
 > **[Drying Filament](../reference/filament-drying.md)** reference.

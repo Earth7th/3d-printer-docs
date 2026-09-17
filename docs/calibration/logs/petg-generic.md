@@ -93,7 +93,25 @@ range **0 → 0.1, step 0.002**, Print numbers on. Printed at 245 °C, flow 0.96
 ![Step 3 pressure advance pattern result](images/petg-03-pa.jpg) <!-- add your photo -->
 
 ## Step 4 — Retraction
-_Pending._
+
+**Method:** Orca `Calibration → Retraction test`, Start 0 mm, End 2 mm, step 0.1 mm
+(21 blocks; block N = (N−1) × 0.1 mm). Printed at 245 °C, flow 0.96, PA 0.076, 50% fan.
+
+**Observations**
+
+| Blocks | Retraction | Result |
+|--------|-----------|--------|
+| 1–3 | 0.0 – 0.2 mm | Clumped, thick strings → too little |
+| **4–7** | **0.3 – 0.6 mm** | **No strings → clean window** |
+| 8–21 | 0.7 – 2.0 mm | Strings return and worsen → over-retraction |
+
+**Decision:** clean window 0.3–0.6 mm; picked **0.4 mm** (lowest clean + small margin
+above the stringing zone). Low value is normal for a direct-drive extruder.
+
+**Applied:** Retraction length = **`0.4` mm** → saved to profile.
+
+**Photo:**
+![Step 4 retraction test result](images/petg-04-retraction.jpg) <!-- add your photo -->
 
 ## Step 5 — Max volumetric speed
 _Pending._

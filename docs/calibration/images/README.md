@@ -11,7 +11,8 @@ Drop your calibration result photos here using these exact filenames so the guid
 | 4 — Retraction | `04-retraction-too-low`, `04-retraction-correct`, `04-retraction-too-high` |
 | 5 — Max volumetric speed | `05-maxflow-correct`, `05-maxflow-too-high` |
 | 6 — Bridging | `06-bridge-sagging`, `06-bridge-correct`, `06-bridge-lumpy` |
-| 7 — Ironing | `07-ironing-under`, `07-ironing-correct`, `07-ironing-over` |
+| 7 — Overhang | `07-overhang-poor`, `07-overhang-correct` |
+| 8 — Ironing | `08-ironing-under`, `08-ironing-correct`, `08-ironing-over` |
 
 **Tips for good reference photos:** shoot in even, diffuse light; get close and in focus;
 keep the same angle for the under/correct/over trio so readers can compare them directly.

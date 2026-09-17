@@ -133,16 +133,19 @@ everywhere → the PETG is wet** (separate issue, not speed).
 
 > ⚠️ **Action item — dry the PETG** (~65 °C, 6–8 h; see
 > [Drying Filament](../../reference/filament-drying.md)). Moisture affects surface quality
-> and stringing; re-check Step 4 (retraction) after drying, then do Steps 6–7.
+> and stringing; re-check Step 4 (retraction) after drying, then do Steps 6–8.
 
 **Photo:**
 ![Step 5 max volumetric speed result](images/petg-05-maxflow.jpg) <!-- add your photo -->
 
 ## Step 6 — Bridging
-_Pending._
+_Pending — waiting on dry filament._
 
-## Step 7 — Ironing
-_Pending._
+## Step 7 — Overhang
+_Pending — waiting on dry filament._
+
+## Step 8 — Ironing
+_Pending — waiting on dry filament._
 
 ---
 

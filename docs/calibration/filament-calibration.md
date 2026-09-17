@@ -40,7 +40,7 @@ Do these every time, or the tests below will lie to you:
 3. **Dry the filament** — PETG especially absorbs moisture; wet filament strings, pops, and leaves pockmarks no matter how well you calibrate. See **[Drying Filament](../reference/filament-drying.md)** for temps, times, and how to spot wet filament.
 4. **Let auto-cal finish** — if your printer has a built-in calibration (like the K2), run it first. This guide *refines* its result.
 5. **Pick ONE filament** to calibrate at a time. If you use a multi-material unit (e.g. the K2's CFS), load it in a known slot and note which one.
-6. **Use a standard print speed and keep it constant** across all 7 steps. Calibrate at the speed you actually print — don't use max speed, or you'll be testing speed instead of the parameter. Changing speed later can shift earlier results.
+6. **Use a standard print speed and keep it constant** across all 8 steps. Calibrate at the speed you actually print — don't use max speed, or you'll be testing speed instead of the parameter. Changing speed later can shift earlier results.
 
 > **How to read the photos in each step:** every step shows three results —
 > ❌ **too low / under**, ✅ **correct**, ❌ **too high / over**. Match your own print to
@@ -61,15 +61,16 @@ Each step assumes the previous one is correct. **Do not skip ahead.**
 
 **Finishing (surface quality):**
 6. Bridging
-7. Ironing (top surface)
+7. Overhang
+8. Ironing (top surface)
 
-In OrcaSlicer, most tests live under the **Calibration** menu in the top bar. Steps 6–7
-are printed test models where you adjust one setting and reprint.
+In OrcaSlicer, most tests live under the **Calibration** menu in the top bar. Steps 6–8
+are printed test models where you adjust settings and reprint.
 
 **Where each value gets saved** — Orca has two profiles, and it matters which one:
 - **Filament settings** (per-material): temperature, flow ratio, pressure advance,
   retraction (as an override), max volumetric speed → Steps 1–5.
-- **Process settings** (per print/quality profile): bridging and ironing → Steps 6–7.
+- **Process settings** (per print/quality profile): bridging, overhang, and ironing → Steps 6–8.
 
 Each step below ends with a **"Where to set it in Orca"** line giving the exact path.
 
@@ -248,7 +249,36 @@ filament) → **Quality** → **Bridging** → **Bridge flow ratio**; bridge spe
 
 ---
 
-## Step 7 — Ironing (top surface)
+## Step 7 — Overhang
+
+**What it fixes:** Steep unsupported walls (angles leaning outward) printing cleanly instead
+of curling, drooping, or going rough on the underside. Closely related to bridging — both
+are unsupported material, controlled mainly by **cooling and speed** rather than extrusion.
+
+**How to run it (Orca):** No one-click test — print an **overhang test model** (a stepped
+"overhang tower" with increasing angles, e.g. 30°–70° from vertical, from
+MakerWorld/Thingiverse). Find the steepest angle that still prints cleanly. Improve poor
+overhangs by **more cooling** on the overhang, **slowing** the overhang moves, and/or
+**thinner layers**.
+
+**How to read it:**
+- ❌ *Failing:* edges curl up, underside droops/rough, corners lift → too little cooling or too fast.
+- ✅ *Correct:* clean, consistent surface down to steep angles.
+- ⚖️ *PETG trade-off:* more cooling improves overhangs but **weakens layer bonding** — balance this against your Step 1 temperature/strength choice rather than maxing cooling.
+
+| Result | Photo |
+|--------|-------|
+| ❌ Poor (curling/droop) | ![Overhang poor — curling and droop](images/07-overhang-poor.jpg) |
+| ✅ Correct | ![Overhang correct — clean steep angles](images/07-overhang-correct.jpg) |
+
+**Where to set it in Orca:** **Process settings** → **Quality** → *Force cooling for
+overhangs and bridges*, *Cooling overhang threshold*, *Fan speed for overhangs*; and
+**Speed** → *overhang speeds / "Slow down for overhangs"* to slow steep overhangs. Save the
+process profile.
+
+---
+
+## Step 8 — Ironing (top surface)
 
 **What it fixes:** Makes flat top surfaces smooth and even by re-passing them with a hot
 nozzle and a trickle of plastic. Optional, but great for lids, plates, and logos.
@@ -264,9 +294,9 @@ flat-topped test cube and adjust.
 
 | Result | Photo |
 |--------|-------|
-| ❌ Under-ironed | ![Ironing too little — lines remain](images/07-ironing-under.jpg) |
-| ✅ Correct | ![Ironing correct — smooth even top](images/07-ironing-correct.jpg) |
-| ❌ Over-ironed | ![Ironing too much — buildup and ripples](images/07-ironing-over.jpg) |
+| ❌ Under-ironed | ![Ironing too little — lines remain](images/08-ironing-under.jpg) |
+| ✅ Correct | ![Ironing correct — smooth even top](images/08-ironing-correct.jpg) |
+| ❌ Over-ironed | ![Ironing too much — buildup and ripples](images/08-ironing-over.jpg) |
 
 **Where to set it in Orca:** **Process settings** (the print/quality profile) → **Quality**
 → **Ironing** → set **Ironing type = Top surfaces**, plus **Ironing flow** and **Ironing

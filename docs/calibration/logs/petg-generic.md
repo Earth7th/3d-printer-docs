@@ -10,6 +10,8 @@ photo of each test. Use it as a filled-in example of what the process actually l
 - **Started:** 2026-09-17
 - **Auto-cal values found?** No clear editable numbers surfaced → treating this as a
   **fresh manual calibration** (the K2's auto flow/PA still runs automatically underneath).
+- **Print speed for all tests:** Standard **0.20 mm** process preset, kept constant across
+  every step (outer walls ~100–150 mm/s). Calibrate at the speed you actually print.
 
 ---
 

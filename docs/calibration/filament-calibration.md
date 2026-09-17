@@ -40,6 +40,7 @@ Do these every time, or the tests below will lie to you:
 3. **Dry the filament** — PETG especially absorbs moisture; wet filament strings and pops no matter how well you calibrate.
 4. **Let auto-cal finish** — if your printer has a built-in calibration (like the K2), run it first. This guide *refines* its result.
 5. **Pick ONE filament** to calibrate at a time. If you use a multi-material unit (e.g. the K2's CFS), load it in a known slot and note which one.
+6. **Use a standard print speed and keep it constant** across all 7 steps. Calibrate at the speed you actually print — don't use max speed, or you'll be testing speed instead of the parameter. Changing speed later can shift earlier results.
 
 > **How to read the photos in each step:** every step shows three results —
 > ❌ **too low / under**, ✅ **correct**, ❌ **too high / over**. Match your own print to

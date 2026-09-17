@@ -66,6 +66,13 @@ Each step assumes the previous one is correct. **Do not skip ahead.**
 In OrcaSlicer, most tests live under the **Calibration** menu in the top bar. Steps 6–7
 are printed test models where you adjust one setting and reprint.
 
+**Where each value gets saved** — Orca has two profiles, and it matters which one:
+- **Filament settings** (per-material): temperature, flow ratio, pressure advance,
+  retraction (as an override), max volumetric speed → Steps 1–5.
+- **Process settings** (per print/quality profile): bridging and ironing → Steps 6–7.
+
+Each step below ends with a **"Where to set it in Orca"** line giving the exact path.
+
 ---
 
 ## Step 1 — Temperature
@@ -90,7 +97,8 @@ Pick the **lowest temperature that still bonds strongly and looks clean**.
 | ✅ Correct | ![Temperature correct — clean, well bonded](images/01-temp-correct.jpg) |
 | ❌ Too cold | ![Temperature too cold — weak bonding, gaps](images/01-temp-too-cold.jpg) |
 
-**Save it to:** your filament profile → *Filament → Nozzle temperature*.
+**Where to set it in Orca:** **Filament settings** (edit your filament profile) → **Filament**
+tab → **Nozzle temperature** (set "Other layers"; first layer can be +5 °C). Save the profile.
 
 ---
 
@@ -120,7 +128,8 @@ It prints **11 blocks**, each nudging your current flow ratio by an additive mod
 | ✅ Correct | ![Flow correct — smooth flat top](images/02-flow-correct.jpg) |
 | ❌ Too high | ![Flow too high — raised ridges](images/02-flow-too-high.jpg) |
 
-**Save it to:** your filament profile → *Filament → Flow ratio*.
+**Where to set it in Orca:** **Filament settings** → **Filament** tab → **Flow ratio**.
+Enter the final number (`old + modifier`). Save the profile.
 
 ---
 
@@ -151,7 +160,9 @@ Read the value off the cleanest section.
 | ✅ Correct | ![PA correct — sharp even corners](images/03-pa-correct.jpg) |
 | ❌ Too high | ![PA too high — gaps at corners](images/03-pa-too-high.jpg) |
 
-**Save it to:** your filament profile → *Filament → Pressure advance*.
+**Where to set it in Orca:** **Filament settings** → **Setting Overrides** tab → tick
+**Pressure advance** and enter the value. Save the profile. (On Klipper machines like the
+K2 this writes the `pressure_advance` value for prints sliced from Orca.)
 
 ---
 
@@ -175,7 +186,13 @@ moves between them, increasing retraction distance up the height. Find the lowes
 | ✅ Correct | ![Retraction correct — clean, no strings](images/04-retraction-correct.jpg) |
 | ❌ Too high | ![Retraction too high — under-extrusion](images/04-retraction-too-high.jpg) |
 
-**Save it to:** your filament profile → *Filament → Retraction length* (and speed if tuned).
+**Where to set it in Orca:** two options —
+- **Per filament (recommended):** **Filament settings** → **Setting Overrides** tab →
+  under **Retraction**, tick **Length** and set the value. Keeps it tied to this filament.
+- **Global:** **Printer settings** → **Extruder 1** → **Retraction** → **Length**. Applies
+  to every filament.
+
+Save after setting.
 
 ---
 
@@ -199,7 +216,8 @@ Set the value slightly **below** where degradation starts.
 | ✅ Correct (below limit) | ![Below max flow — smooth walls](images/05-maxflow-correct.jpg) |
 | ❌ Too fast (above limit) | ![Above max flow — rough under-extrusion](images/05-maxflow-too-high.jpg) |
 
-**Save it to:** your filament profile → *Filament → Max volumetric speed*.
+**Where to set it in Orca:** **Filament settings** → **Filament** tab → **Max volumetric
+speed** (mm³/s). Save the profile.
 
 ---
 
@@ -224,7 +242,9 @@ slightly and/or increase bridge speed if it sags; reprint.
 | ✅ Correct | ![Bridge correct — flat taut strands](images/06-bridge-correct.jpg) |
 | ❌ Lumpy | ![Bridge lumpy — flow too high](images/06-bridge-lumpy.jpg) |
 
-**Save it to:** your process/print profile → *Quality → Bridging*.
+**Where to set it in Orca:** **Process settings** (the print/quality profile, *not* the
+filament) → **Quality** → **Bridging** → **Bridge flow ratio**; bridge speed is under
+**Speed → Others → Bridge**. Save the process profile.
 
 ---
 
@@ -248,7 +268,9 @@ flat-topped test cube and adjust.
 | ✅ Correct | ![Ironing correct — smooth even top](images/07-ironing-correct.jpg) |
 | ❌ Over-ironed | ![Ironing too much — buildup and ripples](images/07-ironing-over.jpg) |
 
-**Save it to:** your process/print profile → *Quality → Ironing*.
+**Where to set it in Orca:** **Process settings** (the print/quality profile) → **Quality**
+→ **Ironing** → set **Ironing type = Top surfaces**, plus **Ironing flow** and **Ironing
+line spacing**. Save the process profile.
 
 ---
 

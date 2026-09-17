@@ -114,7 +114,28 @@ above the stringing zone). Low value is normal for a direct-drive extruder.
 ![Step 4 retraction test result](images/petg-04-retraction.jpg) <!-- add your photo -->
 
 ## Step 5 — Max volumetric speed
-_Pending._
+
+**Method:** Orca `Calibration → Max flowrate`, Start 5 → End 20 mm³/s, step 0.5. Printed
+at 245 °C, flow 0.96, PA 0.076, retraction 0.4 mm.
+
+**Conversion formula:** `max = start + (height_mm × step)`.
+
+**Observations:** Speed-degradation mark appears at **2.8 cm (28 mm)** height. Below that
+(2.0–2.5 cm) no speed defects — only **scattered moisture pocks ("water vapor dots")
+everywhere → the PETG is wet** (separate issue, not speed).
+
+**Calculation:** ceiling = `5 + (28 × 0.5) =` **19 mm³/s** (degradation at 2.8 cm).
+
+**Decision:** deliberately back off to the **2.5 cm** height for a buffer:
+`5 + (25 × 0.5) =` **17.5 mm³/s**.
+
+**Applied:** Max volumetric speed = **`17.5` mm³/s** → saved to profile.
+
+> ⚠️ **Action item — dry the PETG** (~65 °C, 6–8 h). Moisture affects surface quality and
+> stringing; re-check Step 4 (retraction) after drying.
+
+**Photo:**
+![Step 5 max volumetric speed result](images/petg-05-maxflow.jpg) <!-- add your photo -->
 
 ## Step 6 — Bridging
 _Pending._

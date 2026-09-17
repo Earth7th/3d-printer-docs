@@ -48,8 +48,28 @@ Fallback **250 °C** if real parts show weak/cracking layers (or drop cooling to
 
 ---
 
-## Step 2 — Flow rate
-_Pending — do Step 1 first._
+## Step 2 — Flow rate (YOLO)
+
+**Method:** Orca `Calibration → Flow rate → YOLO (Recommended)`, default range −0.05…+0.05,
+step 0.01, 11 blocks. Printed at 245 °C, 50% fan, 0.20 mm, standard speed.
+
+**Observations (middle blocks)**
+
+| Modifier | Top surface / join line |
+|----------|-------------------------|
+| > +0.01 | Bumps + visible union line → over-extruded |
+| **+0.01** | **Flattest top, join line only faintly raised, no gaps → best** |
+| 0.00 | Some groove ("subsided"), line slightly larger than outer |
+| −0.01 | More groove; line width matches outer |
+| < −0.01 | Gaps in outer arcs → under-extruded |
+
+**Decision:** best block = **+0.01**. Slight over is the correct side (smooth, watertight
+top; grooves/gaps are the worse failure).
+
+**Applied:** `final flow = current + modifier = 0.95 + 0.01 =` **`0.96`** → saved to filament profile.
+
+**Photo:**
+![Step 2 flow rate YOLO result](images/petg-02-flow.jpg) <!-- add your photo -->
 
 ## Step 3 — Pressure advance
 _Pending._

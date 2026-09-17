@@ -247,7 +247,8 @@ flat-topped test cube and adjust.
 ## Recorded values per filament
 
 Fill one row per spool you calibrate. The **generic PETG** row below shows *example*
-starting ranges — replace with **your** measured values. Add a new row for each new
+starting ranges — replace with **your** measured values. See a real worked run in the
+[Generic PETG calibration log](logs/petg-generic.md). Add a new row for each new
 filament (PLA, ABS, etc.).
 
 | Filament | Nozzle °C | Bed °C | Flow ratio | Pressure advance | Retraction (mm) | Max vol. speed (mm³/s) | Bridge flow | Ironing flow / spacing | Notes |

@@ -45,6 +45,7 @@ Fallback **250 °C** if real parts show weak/cracking layers (or drop cooling to
 
 **Photo:**
 ![Step 1 temperature tower result](images/petg-01-temp.jpg) <!-- add your photo -->
+*Caption: ________________________________________*
 
 ---
 
@@ -70,6 +71,7 @@ top; grooves/gaps are the worse failure).
 
 **Photo:**
 ![Step 2 flow rate YOLO result](images/petg-02-flow.jpg) <!-- add your photo -->
+*Caption: ________________________________________*
 
 ## Step 3 — Pressure advance
 
@@ -91,6 +93,7 @@ range **0 → 0.1, step 0.002**, Print numbers on. Printed at 245 °C, flow 0.96
 
 **Photo:**
 ![Step 3 pressure advance pattern result](images/petg-03-pa.jpg) <!-- add your photo -->
+*Caption: ________________________________________*
 
 ## Step 4 — Retraction
 
@@ -112,6 +115,7 @@ above the stringing zone). Low value is normal for a direct-drive extruder.
 
 **Photo:**
 ![Step 4 retraction test result](images/petg-04-retraction.jpg) <!-- add your photo -->
+*Caption: ________________________________________*
 
 ## Step 5 — Max volumetric speed
 
@@ -137,6 +141,7 @@ everywhere → the PETG is wet** (separate issue, not speed).
 
 **Photo:**
 ![Step 5 max volumetric speed result](images/petg-05-maxflow.jpg) <!-- add your photo -->
+*Caption: ________________________________________*
 
 ## Step 6 — Bridging
 _Pending — waiting on dry filament._

@@ -92,11 +92,17 @@ block is a different temperature.
 
 Pick the **lowest temperature that still bonds strongly and looks clean**.
 
-| Result | Photo |
-|--------|-------|
-| ❌ Too hot | ![Temperature too hot — stringing and drooping](images/01-temp-too-hot.jpg) |
-| ✅ Correct | ![Temperature correct — clean, well bonded](images/01-temp-correct.jpg) |
-| ❌ Too cold | ![Temperature too cold — weak bonding, gaps](images/01-temp-too-cold.jpg) |
+**❌ Too hot**
+![Temperature too hot — stringing and drooping](images/01-temp-too-hot.jpg)
+*Caption: ________________________________________*
+
+**✅ Correct**
+![Temperature correct — clean, well bonded](images/01-temp-correct.jpg)
+*Caption: ________________________________________*
+
+**❌ Too cold**
+![Temperature too cold — weak bonding, gaps](images/01-temp-too-cold.jpg)
+*Caption: ________________________________________*
 
 **Where to set it in Orca:** **Filament settings** (edit your filament profile) → **Filament**
 tab → **Nozzle temperature** (set "Other layers"; first layer can be +5 °C). Save the profile.
@@ -123,11 +129,17 @@ It prints **11 blocks**, each nudging your current flow ratio by an additive mod
 - ✅ *Correct:* smooth, flat top surface with no gaps and no ridges.
 - ❌ *Too high:* raised ridges, rough "over-stuffed" top, dimensional swelling.
 
-| Result | Photo |
-|--------|-------|
-| ❌ Too low | ![Flow too low — gaps in top surface](images/02-flow-too-low.jpg) |
-| ✅ Correct | ![Flow correct — smooth flat top](images/02-flow-correct.jpg) |
-| ❌ Too high | ![Flow too high — raised ridges](images/02-flow-too-high.jpg) |
+**❌ Too low**
+![Flow too low — gaps in top surface](images/02-flow-too-low.jpg)
+*Caption: ________________________________________*
+
+**✅ Correct**
+![Flow correct — smooth flat top](images/02-flow-correct.jpg)
+*Caption: ________________________________________*
+
+**❌ Too high**
+![Flow too high — raised ridges](images/02-flow-too-high.jpg)
+*Caption: ________________________________________*
 
 **Where to set it in Orca:** **Filament settings** → **Filament** tab → **Flow ratio**.
 Enter the final number (`old + modifier`). Save the profile.
@@ -155,11 +167,17 @@ value.
 
 Read the value off the cleanest section.
 
-| Result | Photo |
-|--------|-------|
-| ❌ Too low | ![PA too low — bulging corners](images/03-pa-too-low.jpg) |
-| ✅ Correct | ![PA correct — sharp even corners](images/03-pa-correct.jpg) |
-| ❌ Too high | ![PA too high — gaps at corners](images/03-pa-too-high.jpg) |
+**❌ Too low**
+![PA too low — bulging corners](images/03-pa-too-low.jpg)
+*Caption: ________________________________________*
+
+**✅ Correct**
+![PA correct — sharp even corners](images/03-pa-correct.jpg)
+*Caption: ________________________________________*
+
+**❌ Too high**
+![PA too high — gaps at corners](images/03-pa-too-high.jpg)
+*Caption: ________________________________________*
 
 **Where to set it in Orca:** **Filament settings** → **Setting Overrides** tab → tick
 **Pressure advance** and enter the value. Save the profile. (On Klipper machines like the
@@ -181,11 +199,17 @@ moves between them, increasing retraction distance up the height. Find the lowes
 - ✅ *Correct:* clean gap, no strings, no surface scarring on the towers.
 - ❌ *Too high:* gaps/under-extrusion after travels, clicking extruder, ground filament.
 
-| Result | Photo |
-|--------|-------|
-| ❌ Too low | ![Retraction too low — stringing](images/04-retraction-too-low.jpg) |
-| ✅ Correct | ![Retraction correct — clean, no strings](images/04-retraction-correct.jpg) |
-| ❌ Too high | ![Retraction too high — under-extrusion](images/04-retraction-too-high.jpg) |
+**❌ Too low**
+![Retraction too low — stringing](images/04-retraction-too-low.jpg)
+*Caption: ________________________________________*
+
+**✅ Correct**
+![Retraction correct — clean, no strings](images/04-retraction-correct.jpg)
+*Caption: ________________________________________*
+
+**❌ Too high**
+![Retraction too high — under-extrusion](images/04-retraction-too-high.jpg)
+*Caption: ________________________________________*
 
 **Where to set it in Orca:** two options —
 - **Per filament (recommended):** **Filament settings** → **Setting Overrides** tab →
@@ -212,10 +236,13 @@ that flow rate (mm³/s) is your limit.
 
 Set the value slightly **below** where degradation starts.
 
-| Result | Photo |
-|--------|-------|
-| ✅ Correct (below limit) | ![Below max flow — smooth walls](images/05-maxflow-correct.jpg) |
-| ❌ Too fast (above limit) | ![Above max flow — rough under-extrusion](images/05-maxflow-too-high.jpg) |
+**✅ Correct (below limit)**
+![Below max flow — smooth walls](images/05-maxflow-correct.jpg)
+*Caption: ________________________________________*
+
+**❌ Too fast (above limit)**
+![Above max flow — rough under-extrusion](images/05-maxflow-too-high.jpg)
+*Caption: ________________________________________*
 
 **Where to set it in Orca:** **Filament settings** → **Filament** tab → **Max volumetric
 speed** (mm³/s). Save the profile.
@@ -237,11 +264,17 @@ slightly and/or increase bridge speed if it sags; reprint.
 - ✅ *Correct:* flat, taut strands spanning the gap cleanly.
 - ❌ *Too high flow:* lumpy, bulging underside.
 
-| Result | Photo |
-|--------|-------|
-| ❌ Sagging | ![Bridge sagging — flow too low or too slow](images/06-bridge-sagging.jpg) |
-| ✅ Correct | ![Bridge correct — flat taut strands](images/06-bridge-correct.jpg) |
-| ❌ Lumpy | ![Bridge lumpy — flow too high](images/06-bridge-lumpy.jpg) |
+**❌ Sagging**
+![Bridge sagging — flow too low or too slow](images/06-bridge-sagging.jpg)
+*Caption: ________________________________________*
+
+**✅ Correct**
+![Bridge correct — flat taut strands](images/06-bridge-correct.jpg)
+*Caption: ________________________________________*
+
+**❌ Lumpy**
+![Bridge lumpy — flow too high](images/06-bridge-lumpy.jpg)
+*Caption: ________________________________________*
 
 **Where to set it in Orca:** **Process settings** (the print/quality profile, *not* the
 filament) → **Quality** → **Bridging** → **Bridge flow ratio**; bridge speed is under
@@ -266,10 +299,13 @@ overhangs by **more cooling** on the overhang, **slowing** the overhang moves, a
 - ✅ *Correct:* clean, consistent surface down to steep angles.
 - ⚖️ *PETG trade-off:* more cooling improves overhangs but **weakens layer bonding** — balance this against your Step 1 temperature/strength choice rather than maxing cooling.
 
-| Result | Photo |
-|--------|-------|
-| ❌ Poor (curling/droop) | ![Overhang poor — curling and droop](images/07-overhang-poor.jpg) |
-| ✅ Correct | ![Overhang correct — clean steep angles](images/07-overhang-correct.jpg) |
+**❌ Poor (curling/droop)**
+![Overhang poor — curling and droop](images/07-overhang-poor.jpg)
+*Caption: ________________________________________*
+
+**✅ Correct**
+![Overhang correct — clean steep angles](images/07-overhang-correct.jpg)
+*Caption: ________________________________________*
 
 **Where to set it in Orca:** **Process settings** → **Quality** → *Force cooling for
 overhangs and bridges*, *Cooling overhang threshold*, *Fan speed for overhangs*; and
@@ -292,11 +328,17 @@ flat-topped test cube and adjust.
 - ✅ *Correct:* uniform, smooth, evenly glossy top.
 - ❌ *Too much flow / too tight spacing:* plastic builds up, ripples, or scars the surface.
 
-| Result | Photo |
-|--------|-------|
-| ❌ Under-ironed | ![Ironing too little — lines remain](images/08-ironing-under.jpg) |
-| ✅ Correct | ![Ironing correct — smooth even top](images/08-ironing-correct.jpg) |
-| ❌ Over-ironed | ![Ironing too much — buildup and ripples](images/08-ironing-over.jpg) |
+**❌ Under-ironed**
+![Ironing too little — lines remain](images/08-ironing-under.jpg)
+*Caption: ________________________________________*
+
+**✅ Correct**
+![Ironing correct — smooth even top](images/08-ironing-correct.jpg)
+*Caption: ________________________________________*
+
+**❌ Over-ironed**
+![Ironing too much — buildup and ripples](images/08-ironing-over.jpg)
+*Caption: ________________________________________*
 
 **Where to set it in Orca:** **Process settings** (the print/quality profile) → **Quality**
 → **Ironing** → set **Ironing type = Top surfaces**, plus **Ironing flow** and **Ironing

@@ -72,7 +72,25 @@ top; grooves/gaps are the worse failure).
 ![Step 2 flow rate YOLO result](images/petg-02-flow.jpg) <!-- add your photo -->
 
 ## Step 3 — Pressure advance
-_Pending._
+
+**Method:** Orca `Calibration → Pressure advance` → **PA Pattern**, extruder **DDE**,
+range **0 → 0.1, step 0.002**, Print numbers on. Printed at 245 °C, flow 0.96, 50% fan,
+0.20 mm, standard speed.
+
+**Observations**
+
+| PA value | Corners |
+|----------|---------|
+| < 0.076 | Bulging corners (PA too low) |
+| **0.076** | **Sharpest, most even corners → best** |
+| > 0.076 | Gaps at corners (PA too high) |
+
+**Decision:** best = **0.076** (a bit high for direct-drive PETG, but it's the sharpest block).
+
+**Applied:** Pressure advance = **`0.076`** → saved to filament profile.
+
+**Photo:**
+![Step 3 pressure advance pattern result](images/petg-03-pa.jpg) <!-- add your photo -->
 
 ## Step 4 — Retraction
 _Pending._

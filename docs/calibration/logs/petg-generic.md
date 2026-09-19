@@ -169,13 +169,13 @@ everywhere → the PETG is wet** (separate issue, not speed).
 on the fresh dry spool. Tested a paired flow×speed diagonal (high flow + slow speed):
 **1.25 @ 20 / 1.5 @ 15 / 1.75 @ 10 mm/s**, 1 wall / ~10 % infill, fan maxed.
 
-**Decision:** landed between the 1.25 and 1.5 squares → **bridge flow ratio ≈ 1.35**,
+**Decision:** landed between the 1.25 and 1.5 squares → **bridge flow ratio 1.4**,
 **bridge speed 10–15 mm/s**. Result judged acceptable.
 
 > PETG bridges worse than PLA by nature (stays soft longer, dislikes heavy cooling), so
 > "good enough" is the realistic bar — lean on supports for long/critical spans.
 
-**Applied:** Process → Quality → Bridging → **Bridge flow ratio 1.35**; bridge speed
+**Applied:** Process → Quality → Bridging → **Bridge flow ratio 1.4**; bridge speed
 **10–15 mm/s** (Speed → Others → Bridge). Saved to the process profile.
 
 **Photo:**

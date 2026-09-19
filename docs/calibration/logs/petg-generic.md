@@ -15,6 +15,26 @@ photo of each test. Use it as a filled-in example of what the process actually l
 
 ---
 
+## Current calibrated values — fresh dry spool (re-run)
+
+The original spool below (Steps 1–5) turned out to be **wet** (moisture pocks) and was
+later ruined during oven drying. Steps 1–5 were **re-run on a fresh, dry spool**; those
+are the values in use now:
+
+| Step | Value |
+|------|-------|
+| 1 Temperature | **240 °C** |
+| 2 Flow ratio | **0.97** |
+| 3 Pressure advance | **0.072** |
+| 4 Retraction | **0.6 mm** |
+| 5 Max volumetric speed | **18 mm³/s** (ceiling ~20; 18 keeps a buffer) |
+
+The detailed per-step sections below are the **original investigation** (wet spool) — kept
+for the reasoning and "what wet filament looks like." Steps 6–8 (bridging, overhang,
+ironing) are done on the fresh dry spool.
+
+---
+
 ## Step 1 — Temperature
 
 **Setup Q&A**

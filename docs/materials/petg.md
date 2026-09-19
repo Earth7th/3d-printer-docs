@@ -51,7 +51,7 @@ ranges above as the starting point and calibrate.
 
 | Nozzle | Bed | Flow | Pressure advance | Retraction | Max vol. speed |
 |--------|-----|------|------------------|------------|----------------|
-| 245 °C | ~75–80 °C | 0.96 | 0.076 | 0.4 mm | 17.5 mm³/s |
+| 240 °C | ~75–80 °C | 0.97 | 0.072 | 0.6 mm | 18 mm³/s |
 
 > These are the author's measured values on one specific machine/spool — **yours will
 > differ.** Use them as a sanity-check ballpark, not a copy-paste.

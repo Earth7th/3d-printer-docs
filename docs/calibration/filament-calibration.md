@@ -254,18 +254,24 @@ speed** (mm³/s). Save the profile.
 **What it fixes:** Spans printed across a gap with no support underneath (the underside of
 holes, overhangs, ceilings). Poorly tuned bridges sag and droop.
 
-**How to run it (Orca):** There's no one-click test — print a **bridge test model** (any
-"bridging torture test" from MakerWorld/Thingiverse). Then adjust
-*Quality → Bridging → Bridge flow ratio* (default `1.0`) and *bridge speed*. Lower the flow
-slightly and/or increase bridge speed if it sags; reprint.
+**How to run it (Orca):** There's no one-click test — print a **bridge test model** (e.g.
+[KNIN's Bridge Calibration Test](https://www.printables.com/model/1475259-3d-printing-bridge-calibration-test-basic-advanced),
+basic + advanced). Then adjust *Quality → Bridging → Bridge flow ratio* (default `1.0`) and
+*bridge speed*, and reprint. Print with **1 wall / ~10 % infill** for fast comparisons.
+
+**The counter-intuitive bit:** on a bridge the strand spans air and is *not* squished flat
+like it is on a solid layer, so it comes out round and narrow. **Raising** bridge flow
+makes wider strands that touch and merge into a flat surface — so the usual fix for sag is
+**more flow, slower speed, and max cooling**, not less flow. Test a grid of flow (e.g.
+**1.0 / 1.5 / 2.0**) × speed (e.g. **25 / 15 / 10 mm/s**) with the fan maxed.
 
 **How to read it:**
-- ❌ *Too low flow / too slow:* saggy, drooping, hairy strands under the bridge.
-- ✅ *Correct:* flat, taut strands spanning the gap cleanly.
-- ❌ *Too high flow:* lumpy, bulging underside.
+- ❌ *Too little flow / too fast:* gaps between strands, saggy, drooping, hairy underside.
+- ✅ *Correct:* strands merge into a flat, taut surface spanning the gap cleanly.
+- ❌ *Too much flow:* lumpy, bulging, over-stuffed underside.
 
 **❌ Sagging**
-![Bridge sagging — flow too low or too slow](images/06-bridge-sagging.jpg)
+![Bridge sagging — too little flow or too fast](images/06-bridge-sagging.jpg)
 *Caption: ________________________________________*
 
 **✅ Correct**
